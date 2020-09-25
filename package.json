@@ -2,7 +2,6 @@
   "name": "@dreamworld/uuid-base62",
   "version": "0.0.0-development",
   "description": "",
-  "type": "module",
   "main": "uuid-base62.js",
   "dependencies": {
     "uuid": "^8.3.0"
