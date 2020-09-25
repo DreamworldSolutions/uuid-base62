@@ -1,13 +1,9 @@
-// import { uuidBase62, toBase62, fromBase62 } from './uuid-base62.js';
-// import { v4 as uuidv4 } from 'uuid';
+import { uuidBase62, toBase62, fromBase62 } from './uuid-base62.js';
 
-// let uuid = uuidv4();
-// console.log('uuid = ', uuid);
-// let base62uuid= toBase62(uuid);
-// console.log('toBase62 = ', base62uuid);
-// let parsedUuid = fromBase62(base62uuid);
-// console.log('fromBase62 = ', parsedUuid);
+//To generate a new uuid in base62 format
+let newBase62uuid = uuidBase62(); //Will return a string like '68S8PT4GInJDiFea3wQE8F'
 
-
-// console.log('new base62UUID = ', uuidBase62());
-// console.log('new base62UUID = ', uuidBase62());
+//From regular UUID to base62 and vice versa
+let uuid = 'da5e2434-1516-4ae4-a05c-afeaebc2219f';
+let base62uuid= toBase62(uuid); // Will produce  '6e3LhWSeLvHYCEAn0fIMfP'
+let parsedUuid = fromBase62(base62uuid); //Will produce back 'da5e2434-1516-4ae4-a05c-afeaebc2219f'
