@@ -13,7 +13,7 @@ npm install @dreamworld/uuid-base62
 ## Usage
 
 ```js
-import { uuidBase62, toBase62, fromBase62 } from './uuid-base62.js';
+import { uuidBase62, toBase62, fromBase62 } from '@dreamworld/uuid-base62';
 
 //To generate a new uuid in base62 format
 let newBase62uuid = uuidBase62(); //Will return a string like '68S8PT4GInJDiFea3wQE8F'
