@@ -3,6 +3,7 @@
   "version": "0.0.0-development",
   "description": "",
   "main": "uuid-base62.js",
+  "type": "module",
   "dependencies": {
     "uuid": "^8.3.0"
   },
