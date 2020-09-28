@@ -24,5 +24,16 @@
   "bugs": {
     "url": "https://github.com/DreamworldSolutions/uuid-base62/issues"
   },
-  "homepage": "https://github.com/DreamworldSolutions/uuid-base62#readme"
+  "homepage": "https://github.com/DreamworldSolutions/uuid-base62#readme",
+  "release": {
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "master",
+      {
+          "name": "feature/*",
+          "prerelease": "${name.replace(/^feature\\//g, \"\")}",
+          "channel": "${name.replace(/^feature\\//g, \"\")}"
+      }
+  ]
+  }
 }
