@@ -1,6 +1,12 @@
-import { v4 as uuidv4, parse as uuidParse, stringify as uuuidStringify } from 'uuid';
+import uuidv4 from 'uuid/dist/esm-browser/v4.js';
+import uuidParse from 'uuid/dist/esm-browser/parse.js';
+import uuidStringify from 'uuid/dist/esm-browser/stringify.js';
 
 import base62 from './base62.js';
+
+export const uuid = () => {
+  return uuidv4();
+}
 
 /**
  * Generates a new UUID represented in base62 format.
@@ -25,7 +31,7 @@ export const toBase62 = (uuid) => {
 export const fromBase62 = (uuidBase62) => {
   let bytes = toByteArray(uuidBase62);
   let decodedBytes = base62.decode(bytes);
-  return uuuidStringify(decodedBytes);
+  return uuidStringify(decodedBytes);
 };
 
 
