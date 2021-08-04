@@ -1,6 +1,4 @@
-import uuidv4 from 'uuid/dist/esm-browser/v4.js';
-import uuidParse from 'uuid/dist/esm-browser/parse.js';
-import uuidStringify from 'uuid/dist/esm-browser/stringify.js';
+import { v4 as uuidv4, parse as uuidParse, stringify as uuidStringify } from 'uuid';
 
 import base62 from './base62.js';
 
