@@ -5,13 +5,10 @@
   "main": "uuid-base62.js",
   "type": "module",
   "dependencies": {
-    "uuid": "^8.3.0"
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "semantic-release": "17.0.2"
-  },
-  "resolutions": {
-    "uuid": "8.3.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
