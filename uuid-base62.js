@@ -1,4 +1,4 @@
-import { v4 as uuidv4, parse as uuidParse, stringify as uuidStringify } from 'uuid';
+import { v4 as uuidv4, parse as uuidParse, stringify as uuidStringify } from '@dreamworld/uuid';
 
 import base62 from './base62.js';
 
